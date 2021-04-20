@@ -1,0 +1,15 @@
+import * as dotenv from "dotenv";
+dotenv.config();
+export const applicationName: string = process.env.APPLICATION_NAME || "";
+export const applicationPort: number = +(process.env.APPLICATION_PORT || "");
+export const redisUrl: string = process.env.REDIS_URL || "";
+export const redisPort: number = +(process.env.REDIS_PORT || 6379);
+export const mongoUrl: string = process.env.MONGO_URL || "";
+export const mongoPort: number = +(process.env.MONGO_PORT || 27017);
+export const mongoUserName: string = process.env.MONGO_USER || "";
+export const mongoPassword: string = process.env.MONGO_PASSWORD || "";
+export const maingunDomain: string = process.env.MAILGUN_DOMAIN || "";
+export const maingunKey: string = process.env.MAILGUN_KEY || "";
+export const cacheAnswerDocket: string = process.env.CACHE_ANSWER_DOCKET || "";
+export const cacheSheetAnswerDocket: string = process.env.CACHE_ANSWER_DOCKET_SHEET || "";
+// export const maingunDomain: string = process.env.MAILGUN_DOMAIN || "";
