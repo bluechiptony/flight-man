@@ -17,7 +17,7 @@ Run `npm run dev`
 
 The minimal flight manager application is to satisfy the following concerns with regards the flight an aviation eco-system
 
-- #### Each Module consist of the following:
+#### Each Module consist of the following:
 
 - Data acces layer : for database operatioons
 - Validator : To ensure avaliablility of required fields and data integrity
