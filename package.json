@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/app.ts",
+    "docs": "typedoc --out docs src",
+    "start": "npm run clean && tsc && node dist/app",
+    "clean": "rm -rf dist",
+    "build": "tsc -b",
+    "test": "jest --runInBand --detectOpenHandles",
+    "gen-doc": "apidoc i ./ -e node_modules -o documentation/"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +29,7 @@
     "mongoose": "^5.12.5",
     "nanoid": "^3.1.22",
     "nanoid-dictionary": "^4.3.0",
+    "neat-csv": "^6.0.1",
     "redis": "^3.1.1",
     "uuid": "^8.3.2",
     "winston": "^3.3.3",

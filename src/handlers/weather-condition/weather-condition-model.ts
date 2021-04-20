@@ -1,7 +1,8 @@
 export interface WeatherCondition {
   weatherCondidtionId: string;
   conditionStart?: Date;
-  destination: any;
+  destination?: any;
+  airportId: string;
   conditionEnd?: Date;
   temperature: number;
   humidity?: number;
