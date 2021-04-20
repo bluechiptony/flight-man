@@ -6,12 +6,12 @@
 
 Built with Typescript, nodejs, express, mongodb
 
-## How to run
+## How to run application
 
-Clone the repository
-Run `npm i`
-create a .env file in the root of your project and copy values for the dot-env-sample file to have environment variables
-Run `npm run dev`
+- Clone the repository
+- Run `npm i` to install dependencies
+- Create a .env file in the root of your project and copy values for the dot-env-sample file to have environment variables
+- Run `npm run dev`
 
 ## Features / Modules
 
