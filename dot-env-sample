@@ -1,0 +1,6 @@
+APPLICATION_NAME=Flight Manager
+APPLICATION_PORT=5500
+DATABASE_HOST=database host
+DATABASE_NAME=database name
+DATABASE_USER= database user
+DATABASE_PASSWORD=database user

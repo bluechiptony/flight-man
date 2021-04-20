@@ -3,6 +3,8 @@ import * as dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
 import { initializeDB } from "./config/database";
+import airlineRoutes from "./routes/airline";
+import airportRoutes from "./routes/airport";
 dotenv.config();
 
 const app: Application = express();
@@ -13,6 +15,9 @@ app.use(express.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+app.use("/airlines", airlineRoutes);
+app.use("/airports", airportRoutes);
 
 initializeDB((error: any) => {
   app.listen(port, async () => {
