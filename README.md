@@ -25,6 +25,8 @@ The minimal flight manager application is to satisfy the following concerns with
 - Model : Object models relevant to the module
 - Adapter : utility package to let application rely minimally on express framework and focus on pure functions
 
+Modules can be found in /src/handlers/
+
 ### Users
 
 #### Entities that will have access to the system
